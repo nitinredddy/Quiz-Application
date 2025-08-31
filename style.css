@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .quiz-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  #quiz-header {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  #question-number {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  #question {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  #answers-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #answers-list li {
+    background-color: #ececec;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  #answers-list li.selected {
+    border-color: #2196f3;
+    background-color: #d0e7ff;
+  }
+  
+  #answers-list li.correct {
+    background-color: #c8e6c9;
+    border-color: #388e3c;
+  }
+  
+  #answers-list li.incorrect {
+    background-color: #ffcdd2;
+    border-color: #d32f2f;
+  }
+  
+  button {
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  #submit-btn {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  #submit-btn:disabled {
+    background-color: #90caf9;
+    cursor: not-allowed;
+  }
+  
+  #next-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  #next-btn:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+  }
+  
+  #restart-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  #result-container {
+    text-align: center;
+  }
+  
+  #result-summary {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+  #result-summary li.correct {
+    color: #388e3c;
+    font-weight: bold;
+  }
+  
+  #result-summary li.incorrect {
+    color: #d32f2f;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 600px) {
+    .quiz-container {
+      padding: 15px;
+    }
+  }
+  
